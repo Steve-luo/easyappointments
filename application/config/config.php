@@ -82,7 +82,7 @@ $config['url_suffix'] = '';
 |
 */
 
-$languages = [
+/* $languages = [
     'ar' => 'arabic',
     'bu' => 'bulgarian',
     'ca' => 'catalan',
@@ -111,6 +111,10 @@ $languages = [
     'es' => 'spanish',
     'sv' => 'swedish',
     'tr' => 'turkish',
+]; */
+
+$languages = [
+    'en' => 'english',
 ];
 
 $language_code = isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) : 'en';
@@ -129,7 +133,7 @@ $config['language'] = isset($_SERVER['HTTP_ACCEPT_LANGUAGE'], $languages[$langua
 | of these languages.
 |
 */
-$config['available_languages'] = [
+/* $config['available_languages'] = [
     'arabic',
     'bulgarian',
     'catalan',
@@ -158,6 +162,10 @@ $config['available_languages'] = [
     'slovak',
     'spanish',
     'turkish'
+]; */
+
+$config['available_languages'] = [
+    'english',
 ];
 
 /*

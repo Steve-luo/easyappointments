@@ -25,12 +25,12 @@
             GPL-3.0
         </a>
 
-        |
+<!--         |
 
         <span id="select-language" class="badge badge-secondary">
             <i class="fas fa-language mr-2"></i>
         	<?= ucfirst(config('language')) ?>
-        </span>
+        </span> -->
 
         |
 

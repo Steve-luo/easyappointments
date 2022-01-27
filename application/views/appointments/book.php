@@ -246,7 +246,7 @@
                     <h2 class="frame-title"><?= lang('customer_information') ?></h2>
 
                     <div class="row frame-content">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12">
                             <div class="form-group">
                                 <label for="first-name" class="control-label">
                                     <?= lang('first_name') ?>
@@ -276,9 +276,15 @@
                                 <input type="text" id="phone-number" maxlength="60"
                                        class="<?= $require_phone_number === '1' ? 'required' : '' ?> form-control"/>
                             </div>
+                            <div class="form-group">
+                                <label for="notes" class="control-label">
+                                    <?= lang('notes') ?>
+                                </label>
+                                <textarea id="notes" maxlength="500" class="form-control" rows="3"></textarea>
+                            </div>
                         </div>
 
-                        <div class="col-12 col-md-6">
+                        <!-- <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="address" class="control-label">
                                     <?= lang('address') ?>
@@ -303,7 +309,7 @@
                                 </label>
                                 <textarea id="notes" maxlength="500" class="form-control" rows="1"></textarea>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -403,10 +409,10 @@
                     </span>
 
                     <span class="footer-options">
-                        <span id="select-language" class="badge badge-secondary">
+                        <!-- <span id="select-language" class="badge badge-secondary">
                             <i class="fas fa-language mr-2"></i>
                             <?= ucfirst(config('language')) ?>
-                        </span>
+                        </span> -->
 
                         <a class="backend-link badge badge-primary" href="<?= site_url('backend'); ?>">
                             <i class="fas fa-sign-in-alt mr-2"></i>
